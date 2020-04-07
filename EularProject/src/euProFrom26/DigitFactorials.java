@@ -1,5 +1,6 @@
 package euProFrom26;
 
+//It is mathematically proved that the maximum number is less than 9999999 Since 9999999 is greater than 7*9!
 public class DigitFactorials {
 	public static long sum=0;
 	public static void main(String[] args) {
