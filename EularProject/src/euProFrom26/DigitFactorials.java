@@ -1,32 +1,36 @@
 package euProFrom26;
 
 public class DigitFactorials {
+	public static long sum=0;
 	public static void main(String[] args) {
-		ret(145,0);
-		
+		long sum2=0;
+		for(long i=1;i<9999999;i++) {
+			sum=0;
+			funct(i);
+			if(i==sum) {
+				sum2=sum2+sum;
+				System.out.print(i);
+				System.out.println();
+			}			
+		}
+		System.out.println(sum2-3);
+	}
+    //The function is opposite .
+	//Also 1!+2! and 2!+1! are same
+	public static void funct(long i) {
+		sum=sum+fact(i%10);
+		if(i/10>0) {
+			funct(i/10);	
+		}
 		
 	}
-	public static int fact(int a) {
-		int l=a;
-		for(int i=2;i<l;i++) {
-			a=a*i;
+	public static long fact(long i) {
+		long a=1;
+		for(int j=1;j<=i;j++) {
+			a=a*j;
 		}
-		return a ;
+		return a;
 	}
 	
-	public static int ret(int a, int sum) {
-		
-		if(a%10!=0 ) {
-			sum=fact(a%10);
-			System.out.print(sum+" + ");
-			ret(a/10,fact(a%10));
-		}
-		else if(a%10==0 && a/10!=0){
-			System.out.print(1+" + ");
-			ret(a/10,1);
-		}
-		
-		return sum;
-	}
-
+	
 }
