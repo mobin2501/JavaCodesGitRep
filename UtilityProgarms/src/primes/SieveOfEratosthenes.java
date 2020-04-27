@@ -4,7 +4,7 @@ import java.util.Collections;
 
 // how many primes from a to n...
 public class SieveOfEratosthenes {
-	static int n=100000;
+	static int n=100;
 	static Boolean[] al=new Boolean[n];
 	static int p=2;
 	public static void main(String args[]) {
@@ -17,7 +17,7 @@ public class SieveOfEratosthenes {
 		int a=0;
 		for(int i=2;i<AL.size();i++) {
 			if(AL.get(i)==true) {
-				//stem.out.println(i); // would print the prime numbers...
+				//System.out.println(i); // would print the prime numbers...
 				a++;
 			}
 			
