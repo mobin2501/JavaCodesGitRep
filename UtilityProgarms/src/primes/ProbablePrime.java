@@ -2,18 +2,13 @@ package primes;
 
 import java.math.BigInteger;
 
+// using java BigInteger.isProbablePrime
 public class ProbablePrime {
 	public static void main(String[] args) {
-		int c=0;
-		BigInteger bi=BigInteger.ONE;
-		for(int i=2;i<100;i++) {
-			bi=bi.add(BigInteger.ONE);
-			if(bi.isProbablePrime(1)==true) {
-				c++;
-			}
-			
+		int n=97;
+		BigInteger bi=BigInteger.valueOf(n);
+		if(bi.isProbablePrime(1)==true) {
+			System.out.print("Prime");
 		}
-		System.out.print(c);
-		
 	}
 }
