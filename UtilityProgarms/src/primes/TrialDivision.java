@@ -36,7 +36,6 @@ public class TrialDivision {
 	//using 6k+1
 	static boolean Check2(int n) {
 		boolean check=true;
-		int m= (int)Math.sqrt(n);
 		if(n%2!=0 && n%3 !=0 ) {
 			for(int k=5;k*k<=n;k=k+6) {
 				if(n%k==0 || n%(k+2)==0) {
