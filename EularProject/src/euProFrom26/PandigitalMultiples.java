@@ -2,6 +2,8 @@ package euProFrom26;
 
 import java.util.Arrays;
 
+//since n>1 so the maximum the number can be is 5 digit
+
 public class PandigitalMultiples {
 	public static void main(String[] args) {
 		long l=0;

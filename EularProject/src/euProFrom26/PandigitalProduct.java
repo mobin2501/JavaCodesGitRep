@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+// 9 digit number 3 dig*2 dig  or 1 dig* 4 dig 
+
 public class PandigitalProduct {
 	static int sum=0;
 	public static void main(String[] args) {
