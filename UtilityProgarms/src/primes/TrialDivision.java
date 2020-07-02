@@ -2,18 +2,10 @@ package primes;
 
 public class TrialDivision {
 	public static void main(String[] args) {
-		long s=System.nanoTime();
-		int count=1;// m
-		count=0; //6k+1
-		int n=100;
-		for(int i=2;i<n;i++) {
-			if(Check2(i)==true) {
-				count++;
-			}
-		}
-		System.out.println(count);
-		long f=System.nanoTime();
-		System.out.println(f-s);
+		//6k+1
+		
+		System.out.print(Check2(2143));
+		
 		
 	}
 	//using 2 and all odd numbers ...
